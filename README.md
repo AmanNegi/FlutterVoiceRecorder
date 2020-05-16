@@ -1,16 +1,19 @@
-# voice_recorder
+# FlutterVoiceRecorder
+A voice recording app build using flutter.
 
-A new Flutter project.
+## Screenshots of the application
+![Permission](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/permit.png)
+![Recording](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/recording.png)
+![AudioList](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/audio_list.png)
+![Playing](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/playing.png)
 
-## Getting Started
+> [For working video click here](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/working_demo.mp4)
 
-This project is a starting point for a Flutter application.
+###### Plugins/Packages used
+[flutter_audio_recorder](https://pub.dev/packages/flutter_audio_recorder)
+[permission_handler](https://pub.dev/packages/permission_handler)
+[path_provider](https://pub.dev/packages/path_provider)
+[google_fonts](https://pub.dev/packages/google_fonts)
+[storage_path](https://pub.dev/packages/storage_path)
+[audioplayers](https://pub.dev/packages/audioplayers)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
