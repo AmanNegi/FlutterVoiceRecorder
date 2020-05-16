@@ -30,10 +30,10 @@ Working Video https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/Scree
 ### Feel Free to Contract
 
 >Gmail : akuro787898@gmail.com
-<br/>
->Facebook : https://www.facebook.com/aster.joules
-<br/>
->Instagram : https://www.instagram.com/asterjoules/
-<br/>
+
+Facebook : https://www.facebook.com/aster.joules
+
+Instagram : https://www.instagram.com/asterjoules/
+
 
 
