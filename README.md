@@ -1,6 +1,7 @@
 # FlutterVoiceRecorder
 A voice recording app build using flutter.
 
+______________________________________________________________________
 ## Topics Covered
 
 > **CustomPaint**<br/>
@@ -9,6 +10,7 @@ A voice recording app build using flutter.
 > **Basic Animations**<br/>
 Use of basic animations to make the app feel responsive. Use of transitions and matrix4 ensures the smoothness of the app.
 
+______________________________________________________________________
 
 ## Screenshots of the application
 <p float="left">
@@ -19,6 +21,8 @@ Use of basic animations to make the app feel responsive. Use of transitions and 
 </p>
 Working Video https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/working_demo.mp4
 
+______________________________________________________________________
+
 ## Plugins/Packages used
 >[flutter_audio_recorder](https://pub.dev/packages/flutter_audio_recorder)<br/>
 >[permission_handler](https://pub.dev/packages/permission_handler)<br/>
@@ -27,7 +31,9 @@ Working Video https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/Scree
 >[storage_path](https://pub.dev/packages/storage_path)<br/>
 >[audioplayers](https://pub.dev/packages/audioplayers)<br/>
 
-##### Feel Free to Contract
+____________________________________________________________________
+
+### Feel Free to Contract
 
 >Gmail : akuro787898@gmail.com
 
