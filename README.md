@@ -2,11 +2,12 @@
 A voice recording app build using flutter.
 
 ## Screenshots of the application
-![Permission](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/permit.png)
-![Recording](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/recording.png)
-![AudioList](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/audio_list.png)
-![Playing](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/playing.png)
-
+<p float="left">
+  <img src="https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/permit.png" width="100" />
+  <img src="https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/recording.png" width="100" /> 
+  <img src="https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/audio_list.png" width="100" />
+  <img src="https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/playing.png" width="100"/>
+</p>
 > [For working video click here](https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/working_demo.mp4)
 
 ###### Plugins/Packages used
