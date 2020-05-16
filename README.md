@@ -1,7 +1,7 @@
 # FlutterVoiceRecorder
 A voice recording app build using flutter.
 
-______________________________________________________________________
+
 ## Topics Covered
 
 > **CustomPaint**<br/>
@@ -10,7 +10,7 @@ ______________________________________________________________________
 > **Basic Animations**<br/>
 Use of basic animations to make the app feel responsive. Use of transitions and matrix4 ensures the smoothness of the app.
 
-______________________________________________________________________
+
 
 ## Screenshots of the application
 <p float="left">
@@ -40,6 +40,5 @@ ____________________________________________________________________
 >Facebook : https://www.facebook.com/aster.joules
 
 >Instagram : https://www.instagram.com/asterjoules/
-
-
+---------------
 
