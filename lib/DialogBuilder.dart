@@ -1,22 +1,75 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-class AudioPlayerClass extends StatefulWidget {
+class DialogBuilder extends StatefulWidget {
   final String path;
 
-  AudioPlayerClass({this.path});
+  DialogBuilder({this.path});
 
   @override
-  _AudioPlayerClassState createState() => _AudioPlayerClassState();
+  _DialogBuilderState createState() => _DialogBuilderState();
 }
 
-class _AudioPlayerClassState extends State<AudioPlayerClass> {
+class _DialogBuilderState extends State<DialogBuilder> {
   AudioPlayer audioPlayer;
   bool _isplaying = false;
   var _icon = Icons.play_arrow;
-  var _color = Colors.green;
+  Color _color = Colors.deepOrangeAccent;
   Duration position = Duration();
   Duration duration = Duration(seconds: 1);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 200,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      child: Column(
+        children: <Widget>[
+          Center(
+            child: IconButton(
+              iconSize: 100,
+              onPressed: () {
+                if (!_isplaying) {
+                  _play();
+                } else {
+                  _stop();
+                }
+              },
+              icon: Icon(_icon),
+              color: _color,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: LinearProgressIndicator(
+              backgroundColor: Colors.grey[300],
+              valueColor: AlwaysStoppedAnimation(Colors.deepOrangeAccent),
+              value: (position.inMilliseconds / duration.inMilliseconds) * 1.0,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  _getDuration(position),
+                  style: TextStyle(color: Colors.black),
+                ),
+                Text(
+                  _getDuration(duration),
+                  style: TextStyle(color: Colors.black),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
 
   String _getDuration(Duration duration) {
     String twoDigits(int n) {
@@ -34,7 +87,7 @@ class _AudioPlayerClassState extends State<AudioPlayerClass> {
     setState(() {
       _isplaying = true;
       _icon = Icons.pause;
-      _color = Colors.red;
+      _color = Colors.blueGrey;
     });
   }
 
@@ -44,7 +97,7 @@ class _AudioPlayerClassState extends State<AudioPlayerClass> {
       position = new Duration();
       _isplaying = false;
       _icon = Icons.play_arrow;
-      _color = Colors.green;
+      _color = Colors.deepOrangeAccent;
     });
   }
 
@@ -80,58 +133,5 @@ class _AudioPlayerClassState extends State<AudioPlayerClass> {
   void initState() {
     _setupAudioPlayer();
     super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(10.0),
-      ),
-      child: Column(
-        children: <Widget>[
-          Center(
-            child: IconButton(
-              iconSize: 100,
-              onPressed: () {
-                if (!_isplaying) {
-                  _play();
-                } else {
-                  _stop();
-                }
-              },
-              icon: Icon(_icon),
-              color: _color,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: LinearProgressIndicator(
-              backgroundColor: Colors.grey[300],
-              valueColor: AlwaysStoppedAnimation(Colors.green),
-              value: (position.inMilliseconds / duration.inMilliseconds) * 1.0,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  _getDuration(position),
-                  style: TextStyle(color: Colors.black),
-                ),
-                Text(
-                  _getDuration(duration),
-                  style: TextStyle(color: Colors.black),
-                )
-              ],
-            ),
-          )
-        ],
-      ),
-    );
   }
 }

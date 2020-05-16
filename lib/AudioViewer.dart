@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:storage_path/storage_path.dart';
-import 'dart:convert';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'package:voice_recorder/AudioViewerCustomTile.dart';
-import 'package:voice_recorder/CurvePainter.dart';
-import 'package:voice_recorder/ListPainter.dart';
+import './Painters/ListPainter.dart';
 
 class AudioViewer extends StatefulWidget {
   @override
@@ -34,10 +31,15 @@ class _AudioViewerState extends State<AudioViewer> {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text("Audio List"),
+        title: Text(
+          "Audio List",
+          style: GoogleFonts.raleway(),
+        ),
       ),
       body: Container(
         child: CustomPaint(
@@ -48,6 +50,8 @@ class _AudioViewerState extends State<AudioViewer> {
               return AudioViewerCustomTile(
                 text: file[index].path.split('/').last,
                 path: file[index].path.toString(),
+                height: height,
+                width: width,
               );
             },
           ),

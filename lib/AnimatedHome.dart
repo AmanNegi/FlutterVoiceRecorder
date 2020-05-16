@@ -8,9 +8,9 @@ import 'package:path_provider/path_provider.dart';
 import 'package:flutter_audio_recorder/flutter_audio_recorder.dart';
 import 'package:file/local.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:voice_recorder/CurvePainter.dart';
-import 'package:voice_recorder/StopPainter.dart';
-import 'package:voice_recorder/TrianglePainter.dart';
+import 'package:voice_recorder/Painters/CurvePainter.dart';
+import 'package:voice_recorder/Painters/StopPainter.dart';
+import './Painters/TrianglePainter.dart';
 
 class AnimatedHome extends StatefulWidget {
   @override
@@ -176,8 +176,12 @@ class AnimatedHomeState extends State<AnimatedHome>
         await _recorder.initialized;
       } else {
         Scaffold.of(context).showSnackBar(new SnackBar(
-          content: new Text("You must accept permissions"),
+          content: new Text(
+            "You must accept permissions",
+            style: GoogleFonts.raleway(color: Colors.black),
+          ),
           duration: Duration(seconds: 1),
+          backgroundColor: Colors.white,
         ));
       }
     } catch (e) {
@@ -249,8 +253,12 @@ class AnimatedHomeState extends State<AnimatedHome>
     File file = localFileSystem.file(result.path);
     Scaffold.of(context).showSnackBar(
       new SnackBar(
-        content: new Text("Saved the file at : ${file.path}"),
+        content: new Text(
+          "Saved the file at : ${file.path}",
+          style: GoogleFonts.raleway(color: Colors.black),
+        ),
         duration: Duration(seconds: 1),
+        backgroundColor: Colors.white,
       ),
     );
 
