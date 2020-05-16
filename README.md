@@ -31,9 +31,9 @@ Working Video https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/Scree
 
 >Gmail : akuro787898@gmail.com
 
-Facebook : https://www.facebook.com/aster.joules
+>Facebook : https://www.facebook.com/aster.joules
 
-Instagram : https://www.instagram.com/asterjoules/
+>Instagram : https://www.instagram.com/asterjoules/
 
 
 
