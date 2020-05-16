@@ -3,10 +3,10 @@ A voice recording app build using flutter.
 
 ## Topics Covered
 
-> **CustomPaint**
+> **CustomPaint**<br/>
  Use of CustomPaint to create extensive designs and buttons. Home design and the buttons of play and pause are made using the CustomPaint for more reference visit [here](https://github.com/AmanNegi/FlutterVoiceRecorder/tree/master/lib/Painters).
 
-> **Basic Animations**
+> **Basic Animations**<br/>
 Use of basic animations to make the app feel responsive. Use of transitions and matrix4 ensures the smoothness of the app.
 
 
