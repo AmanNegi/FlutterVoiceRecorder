@@ -17,7 +17,7 @@ Use of basic animations to make the app feel responsive. Use of transitions and 
   <img src="https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/audio_list.png" width="100" />
   <img src="https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/playing.png" width="100"/>
 </p>
-```Working Video https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/working_demo.mp4```
+Working Video https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/working_demo.mp4
 
 ## Plugins/Packages used
 >[flutter_audio_recorder](https://pub.dev/packages/flutter_audio_recorder)<br/>
@@ -31,10 +31,8 @@ Use of basic animations to make the app feel responsive. Use of transitions and 
 
 >Gmail : akuro787898@gmail.com
 <br/>
-
 >Facebook: https://www.facebook.com/aster.joules
 <br/>
-
 >Instagram:https://www.instagram.com/asterjoules/
 <br/>
 
