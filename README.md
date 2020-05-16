@@ -9,8 +9,6 @@ A voice recording app build using flutter.
 
 > **Basic Animations**<br/>
 Use of basic animations to make the app feel responsive. Use of transitions and matrix4 ensures the smoothness of the app.
-
-<br/>
 <br/>
 
 ## Screenshots of the application
