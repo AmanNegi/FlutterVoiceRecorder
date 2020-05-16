@@ -10,7 +10,8 @@ A voice recording app build using flutter.
 > **Basic Animations**<br/>
 Use of basic animations to make the app feel responsive. Use of transitions and matrix4 ensures the smoothness of the app.
 
-
+<br/>
+<br/>
 
 ## Screenshots of the application
 <p float="left">
@@ -21,7 +22,7 @@ Use of basic animations to make the app feel responsive. Use of transitions and 
 </p>
 Working Video https://github.com/AmanNegi/FlutterVoiceRecorder/blob/master/ScreenShots/working_demo.mp4
 
-______________________________________________________________________
+____________________________________________________________________
 
 ## Plugins/Packages used
 >[flutter_audio_recorder](https://pub.dev/packages/flutter_audio_recorder)<br/>
@@ -40,5 +41,6 @@ ____________________________________________________________________
 >Facebook : https://www.facebook.com/aster.joules
 
 >Instagram : https://www.instagram.com/asterjoules/
+
 ---------------
 
